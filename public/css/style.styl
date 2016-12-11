@@ -5,30 +5,6 @@ $headingColor = $black
 $spacing-unit = 1em
 $main-color = #c4baf0
 
-//mixins
-animate(what = all, duration = .3s, type = ease-in-out)
-  -webkit-transition: what duration type
-  -moz-transition: what duration type
-  -o-transition: what duration type
-  -ms-transition: what duration type
-  transition: what duration type
-
-flex()
-  display: -webkit-box
-  display: -ms-flexbox
-  display: -webkit-flex
-  display: flex
-
-flexbox(args...)
-  flex()
-  -webkit-flex-flow: args
-  -ms-flex-flow: args
-  flex-flow: args
-
-flex-align(align = center)
-  -webkit-align-content: align
-  align-content: align
-
 ::-moz-selection
   background: $main-color
   color: #FFFFFF
@@ -108,7 +84,7 @@ body
 a
   color: $main-color
   text-decoration: none
-  animate(opacity)
+  transition: opacity .3s ease-in-out
   &:hover
     opacity: .7
 img
@@ -119,10 +95,11 @@ img
 
 //layout, type
 .flexbox
-  flexbox(row nowrap)
+  display: flex
+  flex-flow: row nowrap
 
 .align-middle
-  flex-align()
+  align-items: center
 
 .small-container
   max-width: $mobile
@@ -154,7 +131,7 @@ p
     z-index: -1
 
 .banner-content
-  padding: $spacing-unit*7 $spacing-unit
+  padding: ($spacing-unit*7) $spacing-unit
 
 .heading
   display: inline-block
@@ -204,7 +181,7 @@ label
   padding: $spacing-unit * .75
   border-radius: .15rem
   font-weight: 600
-  animate(background)
+  transition: background .3s ease-in-out
 
 .primary-btn
   background: $main-color
@@ -216,7 +193,7 @@ label
 .text-input
   padding: $spacing-unit * .75
   border: 1px solid $main-color
-  animate(border)
+  transition: border .3s ease-in-out
   &:focus
     outline: 0
     border: 1px solid darken($main-color, 15%)
