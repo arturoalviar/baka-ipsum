@@ -5,23 +5,23 @@
   "description": "A Lorem Ipsum generator for anime fans, baka!",
   "main": "app.js",
   "repository": {
-  "url": "https://github.com/arturoalviar/baka-ipsum",
-  "type": "git"
+    "url": "https://github.com/arturoalviar/baka-ipsum",
+    "type": "git"
   },
   "license": "MIT",
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
-    "autoprefixer-stylus": "^0.11.0",
-    "body-parser": "~1.13.2",
-    "cookie-parser": "~1.3.5",
-    "debug": "~2.2.0",
-    "express": "~4.13.1",
-    "express-minify": "^0.2.0",
-    "jade": "~1.11.0",
-    "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0",
-    "stylus": "0.42.3"
+    "autoprefixer-stylus": "^0.14.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "express-minify": "^1.0.0",
+    "jade": "^1.11.0",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0",
+    "stylus": "^0.54.5"
   }
 }
